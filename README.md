@@ -1,16 +1,16 @@
-# Quickscript Extra
+# Qi-Quickscripts
 
-Some scripts for [Quickscript](https://github.com/Metaxal/quickscript).
+Some [Quickscript](https://github.com/Metaxal/quickscript) scripts to make it easier to work with [Qi](https://docs.racket-lang.org/qi/index.html) in DrRacket.
 
 ## 1. Installation
 
 In DrRacket, in `File|Package manager|Source`, enter
-`quickscript-extra`.
+`qi-quickscripts`.
 
-Or, on the command line, type: `raco pkg install quickscript-extra`.
+Or, on the command line, type: `raco pkg install qi-quickscripts`.
 
 If DrRacket is already running, click on `Scripts|Manage scripts|Compile
-scripts and reload menu`.
+scripts`.
 
 ## 2. Scripts
 
