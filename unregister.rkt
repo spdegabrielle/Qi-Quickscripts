@@ -4,7 +4,7 @@
 
 ;;; To remove the script directory from Quickscript's library,
 ;;; run this file in DrRacket, or on the command line with
-;;; $ racket -l quickscript-extra/register
+;;; $ racket -l qi-quickscripts/register
 
 (define-runtime-path script-dir "scripts")
 (remove-third-party-script-directory! script-dir)
