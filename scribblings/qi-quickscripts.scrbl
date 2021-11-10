@@ -61,7 +61,6 @@ If DrRacket is already running, click on @tt{Scripts|Manage scripts|Compile scri
                       (loop post))]
                [else str])))))
 
-
 @section{Customizing}
 
 Scripts can be selectively deactivated from the library
