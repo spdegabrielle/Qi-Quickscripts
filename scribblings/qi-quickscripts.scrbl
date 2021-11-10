@@ -8,49 +8,35 @@
 @(define-runtime-path scripts-path "../scripts")
 
 @;; If calling this function is slow, compile the scripts first.
+
 @(define (get-script-help-strings scripts-path)
-  (filter
-   values
-   (for/list ([filename (in-list (directory-list scripts-path #:build? #f))])
-     (define filepath (build-path scripts-path filename))
-     (and (script-file? filepath)
-          (cons (path->string (path-replace-extension filename #""))
-                (get-script-help-string filepath))))))
+   (filter
+    values
+    (for/list ([filename (in-list (directory-list scripts-path #:build? #f))])
+      (define filepath (build-path scripts-path filename))
+      (and (script-file? filepath)
+           (cons (path->string (path-replace-extension filename #""))
+                 (get-script-help-string filepath))))))
 @(define help-strings (get-script-help-strings scripts-path))
-
-
-Some [Quickscript](https://github.com/Metaxal/quickscript) scripts to make it easier to work with [Qi](https://docs.racket-lang.org/qi/index.html) in DrRacket.
-
-## 1. Installation
-
-In DrRacket, in `File|Package manager|Source`, enter
-`qi-quickscripts`.
-
-Or, on the command line, type: `raco pkg install qi-quickscripts`.
-
-If DrRacket is already running, click on `Scripts|Manage scripts|Compile
-scripts`.
-
-
 
 @title{Qi-Quickscripts}
 
-Some @(hyperlink "https://github.com/Metaxal/quickscript" "Quickscript") scripts 
+Some @(hyperlink "https://github.com/Metaxal/quickscript" "Quickscript") scripts
 to make it easier to work with @(hyperlink "https://docs.racket-lang.org/qi/index.html" "Qi") in DrRacket.
 
 @section{Installation}
 
-In DrRacket, in @tt{File|Package manager|Source}, enter @tt{quickscript-extra}.
+In DrRacket, in @tt{File|Package manager|Source}, enter @tt{qi-quickscripts}.
 
-Or, on the command line, type: @tt{raco pkg install quickscript-extra}.
+Or, on the command line, type: @tt{raco pkg install qi-quickscripts}.
 
 If DrRacket is already running, click on @tt{Scripts|Manage scripts|Compile scripts}.
 
 @section{Scripts}
 
-
-@(itemlist
-  (for/list ([(name str) (in-dict help-strings)])
+@;{
+ @(itemlist
+   (for/list ([(name str) (in-dict help-strings)])
      (item (index name @(bold name)) ": "
            (let loop ([str str])
              (match str
@@ -60,6 +46,22 @@ If DrRacket is already running, click on @tt{Scripts|Manage scripts|Compile scri
                       (hyperlink link txt)
                       (loop post))]
                [else str])))))
+ ;}
+
+
+Insert ☯ on c:;
+
+Insert △ on c:u
+
+Insert ▽ on c:s:u
+
+Insert ⏚ on c:=
+
+Insert ~> on c:>
+
+Insert -< on c:<
+
+
 
 @section{Customizing}
 

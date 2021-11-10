@@ -14,6 +14,6 @@
                "web-server-lib"))
 (define build-deps '(#;"scribble-lib" "racket-doc" "rackunit-lib"))
 (define scribblings '(("scribblings/qi-quickscripts.scrbl" ())))
-(define pkg-desc "Description Here")
+(define pkg-desc "Quickscripts to support the Qi language")
 (define version "0.0")
 (define pkg-authors '(sdegabrielle))

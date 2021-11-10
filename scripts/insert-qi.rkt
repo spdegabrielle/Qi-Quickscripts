@@ -6,19 +6,19 @@
 
 (define-script insert-☯
   #:label "☯"
-  #:help-string "Insert ☯"
+  #:help-string "Insert ☯ on c:;"
   #:menu-path ("Insert")
   #:shortcut #\;
   #:shortcut-prefix (ctl)
   #:output-to selection
   (λ (selection)
     "☯"))
-    
+
 ;; △ and ▽
 
 (define-script insert-△
   #:label "△"
-  #:help-string "Insert △"
+  #:help-string "Insert △ on c:u"
   #:menu-path ("Insert")
   #:shortcut #\u
   #:shortcut-prefix (ctl)
@@ -28,7 +28,7 @@
 
 (define-script insert-▽
   #:label "▽"
-  #:help-string "Insert ▽"
+  #:help-string "Insert ▽ on c:s:u"
   #:menu-path ("Insert")
   #:shortcut #\u
   #:shortcut-prefix (ctl shift)
@@ -38,15 +38,36 @@
 
 
 ;; C-= for ⏚
-    
+
 (define-script insert-⏚
   #:label "⏚"
-  #:help-string "Insert ⏚"
+  #:help-string "Insert ⏚ on c:="
   #:menu-path ("Insert")
   #:shortcut #\=
   #:shortcut-prefix (ctl)
   #:output-to selection
   (λ (selection)
     "⏚"))
- 
- 
+
+
+;; ~> and -<
+
+(define-script insert-~>
+  #:label "~>"
+  #:help-string "Insert ~> on c:>"
+  #:menu-path ("Insert")
+  #:shortcut #\>
+  #:shortcut-prefix (ctl)
+  #:output-to selection
+  (λ (selection)
+    "~>"))
+
+(define-script insert--<
+  #:label "-<"
+  #:help-string "Insert -< on c:<"
+  #:menu-path ("Insert")
+  #:shortcut #\<
+  #:shortcut-prefix (ctl)
+  #:output-to selection
+  (λ (selection)
+    "-<"))
