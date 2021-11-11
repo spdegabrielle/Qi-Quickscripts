@@ -22,7 +22,7 @@
 
 (define-script insert-△
   #:label "△"
-  #:help-string "Insert △ on c:u"
+  #:help-string "Insert △ on c:s:m"
   #:menu-path ("Insert")
   #:shortcut #\u
   #:shortcut-prefix (ctl)
@@ -32,7 +32,7 @@
 
 (define-script insert-▽
   #:label "▽"
-  #:help-string "Insert ▽ on c:s:u"
+  #:help-string "Insert ▽ on c:s:v"
   #:menu-path ("Insert")
   #:shortcut #\u
   #:shortcut-prefix (ctl shift)
