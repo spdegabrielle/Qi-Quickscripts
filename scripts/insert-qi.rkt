@@ -4,6 +4,10 @@
 
 ;; ☯
 
+(script-help-string "A collection of keyboard shortcuts to support the Qi language.")
+
+
+
 (define-script insert-☯
   #:label "☯"
   #:help-string "Insert ☯ on c:;"

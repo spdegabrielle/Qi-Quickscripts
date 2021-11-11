@@ -34,20 +34,20 @@ If DrRacket is already running, click on @tt{Scripts|Manage scripts|Compile scri
 
 @section{Scripts}
 
-@;{
- @(itemlist
-   (for/list ([(name str) (in-dict help-strings)])
-     (item (index name @(bold name)) ": "
-           (let loop ([str str])
-             (match str
-               ;; link
-               [(regexp #px"^(.*)\\[([^]]+)\\]\\(([^)]+)\\)(.*)$" (list _ pre txt link post))
-                (list (loop pre)
-                      (hyperlink link txt)
-                      (loop post))]
-               [else str])))))
- ;}
 
+@(itemlist
+  (for/list ([(name str) (in-dict help-strings)])
+    (item (index name @(bold name)) ": "
+          (let loop ([str str])
+            (match str
+              ;; link
+              [(regexp #px"^(.*)\\[([^]]+)\\]\\(([^)]+)\\)(.*)$" (list _ pre txt link post))
+               (list (loop pre)
+                     (hyperlink link txt)
+                     (loop post))]
+              [else str])))))
+@;{
+ ;}
 
 Insert ☯ on c:;
 

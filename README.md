@@ -15,6 +15,9 @@ scripts`.
 
 ## 2. Scripts
 
+* **insert-qi**: A collection of keyboard shortcuts to support the Qi
+  language.
+
 Insert ☯ on c:;
 
 Insert △ on c:u
