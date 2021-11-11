@@ -24,8 +24,8 @@
   #:label "△"
   #:help-string "Insert △ on c:s:m"
   #:menu-path ("Insert")
-  #:shortcut #\u
-  #:shortcut-prefix (ctl)
+  #:shortcut #\m
+  #:shortcut-prefix (ctl shift)
   #:output-to selection
   (λ (selection)
     "△"))
@@ -34,7 +34,7 @@
   #:label "▽"
   #:help-string "Insert ▽ on c:s:v"
   #:menu-path ("Insert")
-  #:shortcut #\u
+  #:shortcut #\v
   #:shortcut-prefix (ctl shift)
   #:output-to selection
   (λ (selection)
