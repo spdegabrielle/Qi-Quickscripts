@@ -1,7 +1,6 @@
 #lang scribble/manual
 @(require racket/runtime-path
           racket/dict
-          racket/path
           racket/match
           quickscript/base)
 
