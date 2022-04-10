@@ -25,9 +25,9 @@ to make it easier to work with @(hyperlink "https://docs.racket-lang.org/qi/inde
 
 @section{Installation}
 
-In DrRacket, in @tt{File|Package manager|Source}, enter @tt{qi-quickscripts}.
+In DrRacket, in @tt{File|Package manager|Source}, enter @tt{Qi-Quickscripts}.
 
-Or, on the command line, type: @tt{raco pkg install qi-quickscripts}.
+Or, on the command line, type: @tt{raco pkg install Qi-Quickscripts}.
 
 If DrRacket is already running, click on @tt{Scripts|Manage scripts|Compile scripts}.
 
@@ -76,7 +76,7 @@ The shadow script calls the original script without modifying it, and can be mod
 without being modified when the original script is updated.
 
 In particular, if you want to change the default label, menu path or keybinding of a script installed
-from @tt{quickscript-extra}, go to @tt{Scripts|Manage|Library…}, select the @tt{qi-quickscripts}
+from @tt{quickscript-extra}, go to @tt{Scripts|Manage|Library…}, select the @tt{Qi-Quickscripts}
 directory, then the script you want, and click on @tt{Shadow}.
 This opens a new (shadow) script that calls the original script where you can change what you want.
 

@@ -6,9 +6,9 @@ make it easier to work with
 
 ## 1. Installation
 
-In DrRacket, in `File|Package manager|Source`, enter `qi-quickscripts`.
+In DrRacket, in `File|Package manager|Source`, enter `Qi-Quickscripts`.
 
-Or, on the command line, type: `raco pkg install qi-quickscripts`.
+Or, on the command line, type: `raco pkg install Qi-Quickscripts`.
 
 If DrRacket is already running, click on `Scripts|Manage scripts|Compile
 scripts`.
