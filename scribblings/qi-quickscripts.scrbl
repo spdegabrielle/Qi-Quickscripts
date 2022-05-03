@@ -67,7 +67,7 @@ Insert -< on c:<
 Scripts can be selectively deactivated from the library
 (@tt{Scripts|Manage scripts|Library}).
 
-If you change the source code of a script installed from the @tt{quickscript-extra} package
+If you change the source code of a script installed from the @tt{Qi-Quickscripts} package
 (or from any package containing quickscripts), you will lose all your modifications when the package
 is updated.
 To avoid this, you can use Quickscript's
@@ -76,7 +76,7 @@ The shadow script calls the original script without modifying it, and can be mod
 without being modified when the original script is updated.
 
 In particular, if you want to change the default label, menu path or keybinding of a script installed
-from @tt{quickscript-extra}, go to @tt{Scripts|Manage|Library…}, select the @tt{Qi-Quickscripts}
+from @tt{Qi-Quickscripts}, go to @tt{Scripts|Manage|Library…}, select the @tt{Qi-Quickscripts}
 directory, then the script you want, and click on @tt{Shadow}.
 This opens a new (shadow) script that calls the original script where you can change what you want.
 
