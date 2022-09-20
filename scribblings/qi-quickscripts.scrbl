@@ -45,22 +45,20 @@ If DrRacket is already running, click on @tt{Scripts|Manage scripts|Compile scri
                      (hyperlink link txt)
                      (loop post))]
               [else str])))))
-@;{
- ;}
 
-Insert ☯ on c:;
+Insert @tt{☯} on @tt{c:;}
 
-Insert △ on c:u
+Insert @tt{△} on @tt{c:u}
 
-Insert ▽ on c:s:u
+Insert @tt{▽} on @tt{c:s:u}
 
-Insert ⏚ on c:=
+Insert @tt{⏚} on @tt{c:=}
 
-Insert ~> on c:>
+Insert @tt{~>} on @tt{c:>}
 
-Insert -< on c:<
+Insert @tt{-<} on @tt{c:<}
 
-
+The notation "@tt{c:<key>}" used above is a DrRacket convention that indicates pressing Control (@tt{Ctrl}) together with @tt{<key>}. On some systems such as Windows, @tt{c:;} opens the settings dialog by default. In order to avoid this, you may need to uncheck the option Preferences → Editing → General Editing → Enable keybindings in menus. You could also @seclink["Customizing"]{customize} this (or any other) keybinding to something else, if you prefer.
 
 @section{Customizing}
 
